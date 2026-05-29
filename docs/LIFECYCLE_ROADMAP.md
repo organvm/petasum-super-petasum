@@ -1,5 +1,7 @@
 # Logic-First Framework: Exhaustive Lifecycle Roadmap
 
+<a id="top"></a>
+
 ## Table of Contents
 1. [Overview](#overview)
 2. [Phase 0: Foundation (Weeks 1-2)](#phase-0-foundation-weeks-1-2)
@@ -12,6 +14,8 @@
 9. [Measurement Framework](#measurement-framework)
 10. [Risk Mitigation](#risk-mitigation)
 11. [Success Criteria](#success-criteria)
+
+[Back to Top](#top)
 
 ---
 
@@ -37,6 +41,8 @@ Foundation → Awareness → Adoption → Integration → Maturation → Evoluti
 3. **Empirical Validation**: Measure outcomes to verify logical predictions
 4. **Feedback Loops**: Continuous adjustment based on observed results
 5. **Inclusive Rollout**: Bring all stakeholders along the journey
+
+[Back to Top](#top)
 
 ---
 
@@ -131,6 +137,8 @@ Conclusion: If all premises true → proceed to Phase 1
 Otherwise → address gaps before continuing
 ```
 
+[Back to Top](#top)
+
 ---
 
 ## Phase 1: Awareness (Weeks 3-4)
@@ -220,6 +228,8 @@ Premises:
 Conclusion: If premises true → proceed to Phase 2
 Otherwise → extend Phase 1, address specific gaps
 ```
+
+[Back to Top](#top)
 
 ---
 
@@ -319,6 +329,8 @@ Premises:
 Conclusion: If premises true → proceed to Phase 3
 Otherwise → iterate on pilots, address root issues
 ```
+
+[Back to Top](#top)
 
 ---
 
@@ -452,6 +464,8 @@ Premises:
 Conclusion: If premises true → proceed to Phase 4
 Otherwise → strengthen integration, address gaps
 ```
+
+[Back to Top](#top)
 
 ---
 
@@ -593,6 +607,8 @@ Conclusion: If premises true → proceed to Phase 5
 Otherwise → continue maturation, address specific gaps
 ```
 
+[Back to Top](#top)
+
 ---
 
 ## Phase 5: Evolution (Year 2+)
@@ -679,6 +695,8 @@ Otherwise → continue maturation, address specific gaps
 - Organization adapts framework to new contexts
 - Framework is integral to organizational identity
 
+[Back to Top](#top)
+
 ---
 
 ## Continuous Improvement Loop
@@ -727,6 +745,8 @@ Observe → Orient → Decide → Act
 - Monthly: Organization metrics review
 - Quarterly: Framework version updates
 - Annually: Strategic framework assessment
+
+[Back to Top](#top)
 
 ---
 
@@ -791,6 +811,8 @@ Observe → Orient → Decide → Act
 - Recent decisions logged
 - Conflicts resolved
 - Learning resources accessed
+
+[Back to Top](#top)
 
 ---
 
@@ -923,6 +945,8 @@ Observe → Orient → Decide → Act
 4. Publish framework evolution roadmap
 5. Celebrate framework refinements publicly
 
+[Back to Top](#top)
+
 ---
 
 ## Success Criteria
@@ -968,6 +992,8 @@ The framework has succeeded when:
 4. **It creates value**: Measurable competitive advantage, business outcomes, talent advantage
 5. **It's shared**: Organization contributes back to broader community, elevating field
 
+[Back to Top](#top)
+
 ---
 
 ## Governance and Decision Rights
@@ -1007,6 +1033,8 @@ The framework has succeeded when:
 - Develop advanced techniques
 - Mentor new members
 - Drive innovation
+
+[Back to Top](#top)
 
 ---
 
@@ -1048,6 +1076,8 @@ Conclusion: If all premises true → adapt
 Otherwise → continue current approach
 ```
 
+[Back to Top](#top)
+
 ---
 
 ## Conclusion
@@ -1070,3 +1100,5 @@ This lifecycle roadmap provides an exhaustive, logically-sequenced plan for impl
 *Next Review: After Phase 1 completion*
 
 **Remember: The map is not the territory. This roadmap is a logical plan, but reality will teach us. Stay logically rigorous in adaptation.**
+
+[Back to Top](#top)
