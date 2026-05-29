@@ -1,5 +1,7 @@
 # Organization Commandments
 
+<a id="top"></a>
+
 > *We will be at the forefront of society, guiding the automated world's businesses and workforce away from collapse or stagnation — towards ethical and meaningful solutions that facilitate the rapid evolution of advanced empowerment for both employers and employees — in the workforce and the lifeforce.*
 >
 > — ORGANVM North Star (see `meta-organvm/VISION.md`)
@@ -12,6 +14,18 @@ This document outlines the core principles and commandments that guide our organ
 
 **All principles herein are derived from and subordinate to the meta-principle of logical consistency.** See [PRINCIPLE_CONFLICTS.md](PRINCIPLE_CONFLICTS.md) for the complete logic-first framework.
 
+## Table of Contents
+1. [Meta-Principle (Level 0)](#meta-principle-level-0)
+2. [Core Principles](#core-principles)
+3. [Application to Organization-Wide Issue Tracking](#application-to-organization-wide-issue-tracking)
+4. [Contributing to These Principles](#contributing-to-these-principles)
+5. [Logical Framework Reference](#logical-framework-reference)
+6. [Original Inspiration Sources](#original-inspiration-sources)
+
+[Back to Top](#top)
+
+---
+
 ## Meta-Principle (Level 0)
 
 ### Logic & Logical Consistency
@@ -21,6 +35,8 @@ This document outlines the core principles and commandments that guide our organ
 - When principles conflict, logical analysis determines resolution
 - Contradictions are impermissible and must be resolved
 - All principles below are valid insofar as they serve logical coherence
+
+[Back to Top](#top)
 
 ## Core Principles
 
@@ -203,6 +219,8 @@ scope limits and rollback triggers are logical prerequisites for safe unattended
 - **Logic**: Unbounded agents create unpredictable state mutations; logical systems
   require bounded execution contexts for verifiable outcomes
 
+[Back to Top](#top)
+
 ## Application to Organization-Wide Issue Tracking
 
 These commandments apply to our organization-wide issue tracking practices in the following ways:
@@ -227,6 +245,8 @@ These commandments apply to our organization-wide issue tracking practices in th
 - **Quality**: Focus on high-impact organizational initiatives
 - **Backward Compatibility**: Maintain existing processes while improving
 
+[Back to Top](#top)
+
 ## Contributing to These Principles
 
 These commandments are living guidelines, **but all changes must pass logical scrutiny**. As our organization evolves, we should:
@@ -240,11 +260,15 @@ These commandments are living guidelines, **but all changes must pass logical sc
 
 **Key requirement**: Any proposed principle must include its logical derivation and demonstrate consistency with the Level 0 meta-principle of logic.
 
+[Back to Top](#top)
+
 ## Logical Framework Reference
 
 For detailed information on conflict resolution and the logic-first hierarchy:
 - See [PRINCIPLE_CONFLICTS.md](PRINCIPLE_CONFLICTS.md) for complete logical framework
 - See [LOGIC_FRAMEWORK.md](LOGIC_FRAMEWORK.md) for philosophical and practical foundations
+
+[Back to Top](#top)
 
 ## Original Inspiration Sources
 
@@ -258,3 +282,5 @@ These principles were inspired by (but logically analyzed and reorganized):
 *These commandments represent our commitment to building **logically consistent, effective, inclusive, and sustainable** organization-wide processes.*
 
 **Remember: Logic is not one principle among many—it is the foundation upon which all others rest.**
+
+[Back to Top](#top)
