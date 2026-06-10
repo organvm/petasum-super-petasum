@@ -105,13 +105,13 @@ Petasum treats governance decisions with the same rigor that software engineerin
 
 The framework is specified across four interconnected documents, each serving a distinct function:
 
-**[LOGIC_FRAMEWORK.md](LOGIC_FRAMEWORK.md)** --- The philosophical and practical foundation. Covers why logic is self-justifying, the three laws of classical logic (identity, non-contradiction, excluded middle), key inference rules (modus ponens, modus tollens, hypothetical syllogism), common logical fallacies to avoid, and advanced topics including modal logic, temporal logic, deontic logic, and Godelian limits. This is the document you read once and reference thereafter.
+**[LOGIC_FRAMEWORK.md](./docs/LOGIC_FRAMEWORK.md)** --- The philosophical and practical foundation. Covers why logic is self-justifying, the three laws of classical logic (identity, non-contradiction, excluded middle), key inference rules (modus ponens, modus tollens, hypothetical syllogism), common logical fallacies to avoid, and advanced topics including modal logic, temporal logic, deontic logic, and Godelian limits. This is the document you read once and reference thereafter.
 
-**[COMMANDMENTS.md](COMMANDMENTS.md)** --- Sixteen organizational principles classified by hierarchy level, each with an explicit logical derivation. Drawn from analysis of Semgrep, TensorFlow, and Schema.org governance models, then restructured through the logic-first lens. Principles include Free and Open Source (Level 3), Privacy and Security First (Level 2), Deterministic and Reliable (Level 2), Clarity and Precision (Level 1), and Stability (Level 4), among others.
+**[COMMANDMENTS.md](./docs/COMMANDMENTS.md)** --- Sixteen organizational principles classified by hierarchy level, each with an explicit logical derivation. Drawn from analysis of Semgrep, TensorFlow, and Schema.org governance models, then restructured through the logic-first lens. Principles include Free and Open Source (Level 3), Privacy and Security First (Level 2), Deterministic and Reliable (Level 2), Clarity and Precision (Level 1), and Stability (Level 4), among others.
 
-**[PRINCIPLE_CONFLICTS.md](PRINCIPLE_CONFLICTS.md)** --- The conflict resolution matrix. Defines seven conflict types (Principle vs Logic, Same-Level, Different-Level, Interpretation Dispute, Pragmatic vs Ideal, Short-term vs Long-term, Incomplete Information) and provides resolution approaches and outcome criteria for each. Includes precedent case studies: Security vs Ease of Use, Performance vs Feature Completeness, and Backward Compatibility vs Technical Debt.
+**[PRINCIPLE_CONFLICTS.md](./docs/PRINCIPLE_CONFLICTS.md)** --- The conflict resolution matrix. Defines seven conflict types (Principle vs Logic, Same-Level, Different-Level, Interpretation Dispute, Pragmatic vs Ideal, Short-term vs Long-term, Incomplete Information) and provides resolution approaches and outcome criteria for each. Includes precedent case studies: Security vs Ease of Use, Performance vs Feature Completeness, and Backward Compatibility vs Technical Debt.
 
-**[LIFECYCLE_ROADMAP.md](LIFECYCLE_ROADMAP.md)** --- The six-phase implementation plan from Foundation (Weeks 1--2) through Evolution (Year 2+). Each phase has objectives, tasks, deliverables, success criteria, and gate reviews with named decision authorities. The roadmap also specifies a measurement framework (leading and lagging indicators), risk mitigation strategies, and a continuous improvement loop.
+**[LIFECYCLE_ROADMAP.md](./docs/LIFECYCLE_ROADMAP.md)** --- The six-phase implementation plan from Foundation (Weeks 1--2) through Evolution (Year 2+). Each phase has objectives, tasks, deliverables, success criteria, and gate reviews with named decision authorities. The roadmap also specifies a measurement framework (leading and lagging indicators), risk mitigation strategies, and a continuous improvement loop.
 
 ### The Seven-Step Decision Method
 
@@ -212,9 +212,9 @@ Click **"Use this template"** on the repository page to create a new repository 
 ```bash
 git clone https://github.com/organvm-iv-taxis/petasum-super-petasum.git
 cp -r petasum-super-petasum/.github your-org-repo/
-cp petasum-super-petasum/COMMANDMENTS.md your-org-repo/
-cp petasum-super-petasum/LOGIC_FRAMEWORK.md your-org-repo/
-cp petasum-super-petasum/PRINCIPLE_CONFLICTS.md your-org-repo/
+cp petasum-super-petasum/docs/COMMANDMENTS.md your-org-repo/
+cp petasum-super-petasum/docs/LOGIC_FRAMEWORK.md your-org-repo/
+cp petasum-super-petasum/docs/PRINCIPLE_CONFLICTS.md your-org-repo/
 ```
 
 ### Option C: Install the Redirect Template Only
@@ -473,7 +473,7 @@ Contributions are welcome, but all proposed changes must pass logical scrutiny.
 
 ### How to Contribute
 
-1. **Read the framework**: Understand [LOGIC_FRAMEWORK.md](LOGIC_FRAMEWORK.md) and [COMMANDMENTS.md](COMMANDMENTS.md) before proposing changes.
+1. **Read the framework**: Understand [LOGIC_FRAMEWORK.md](./docs/LOGIC_FRAMEWORK.md) and [COMMANDMENTS.md](./docs/COMMANDMENTS.md) before proposing changes.
 2. **Open a discussion or RFC**: For significant changes, use the RFC issue template or start a Discussion.
 3. **Include logical reasoning**: Every proposal must include its logical derivation and demonstrate consistency with the Level 0 meta-principle.
 4. **Challenge inconsistencies**: If you find a logical error in any document, you are obligated to point it out. We are obligated to correct it.
