@@ -31,7 +31,7 @@ jobs:
           fi
 
       - name: Comment notification summary
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           PRIORITY: ${{ steps.categorize.outputs.priority }}
           EMOJI: ${{ steps.categorize.outputs.emoji }}
