@@ -51,7 +51,7 @@ class GovernanceReport:
     checks: list[HealthCheck] = field(default_factory=list)
 
     @classmethod
-    def from_engine_audit(cls, result: _EngineAuditResult) -> "GovernanceReport":
+    def from_engine_audit(cls, result: Any) -> "GovernanceReport":
         """Build a local report from a canonical organvm-engine audit result."""
         report = cls()
         for item in getattr(result, "critical", []):

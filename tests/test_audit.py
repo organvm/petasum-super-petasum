@@ -6,15 +6,13 @@ import json
 import os
 import tempfile
 
-from src.__main__ import cmd_audit, cmd_evaluate, cmd_report, load_registry, main
+from src.__main__ import load_registry, main
 from src.governance import (
     GovernanceReport,
     HealthCheck,
     check_ci_health,
     check_documentation_coverage,
 )
-from src.report import generate_organ_report, generate_system_report
-from src.tracker import ObligationStatus, ObligationTracker, PromotionObligation
 
 
 def _write_registry(repos: list[dict]) -> str:
