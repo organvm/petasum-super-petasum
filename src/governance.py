@@ -6,13 +6,11 @@ from dataclasses import dataclass, field
 from typing import Any
 
 try:
-    from organvm_engine.governance.audit import AuditResult as _EngineAuditResult
     from organvm_engine.governance.audit import run_audit as _engine_run_audit
     from organvm_engine.governance.rules import load_governance_rules as _engine_load_governance_rules
 
     _HAS_ENGINE_GOVERNANCE = True
 except ImportError:
-    _EngineAuditResult = Any  # type: ignore[assignment]
     _HAS_ENGINE_GOVERNANCE = False
 
 
