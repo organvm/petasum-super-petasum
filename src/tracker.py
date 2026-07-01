@@ -17,6 +17,7 @@ class ObligationStatus(str, Enum):
 @dataclass
 class PromotionObligation:
     """A pending obligation from the promotion state machine."""
+
     source_organ: str
     target_organ: str
     obligation_type: str
@@ -40,6 +41,7 @@ class PromotionObligation:
 @dataclass
 class ObligationTracker:
     """Track all promotion obligations across the system."""
+
     obligations: list[PromotionObligation] = field(default_factory=list)
 
     def add(self, obligation: PromotionObligation) -> None:
@@ -58,8 +60,7 @@ class ObligationTracker:
         return [o for o in self.obligations if o.is_overdue]
 
     def by_organ(self, organ: str) -> list[PromotionObligation]:
-        return [o for o in self.obligations
-                if o.source_organ == organ or o.target_organ == organ]
+        return [o for o in self.obligations if o.source_organ == organ or o.target_organ == organ]
 
     def summary(self) -> dict:
         return {

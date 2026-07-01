@@ -28,8 +28,18 @@ class TestAuditCompliance:
 
     def test_all_repos_healthy(self):
         repos = [
-            {"name": "r1", "org": "I", "ci_conclusion": "success", "documentation_status": "DEPLOYED"},
-            {"name": "r2", "org": "II", "ci_conclusion": "success", "documentation_status": "ACTIVE"},
+            {
+                "name": "r1",
+                "org": "I",
+                "ci_conclusion": "success",
+                "documentation_status": "DEPLOYED",
+            },
+            {
+                "name": "r2",
+                "org": "II",
+                "ci_conclusion": "success",
+                "documentation_status": "ACTIVE",
+            },
         ]
         report = GovernanceReport()
         for c in check_ci_health(repos):
@@ -41,8 +51,18 @@ class TestAuditCompliance:
 
     def test_mixed_health(self):
         repos = [
-            {"name": "r1", "org": "I", "ci_conclusion": "success", "documentation_status": "DEPLOYED"},
-            {"name": "r2", "org": "II", "ci_conclusion": "failure", "documentation_status": "SKELETON"},
+            {
+                "name": "r1",
+                "org": "I",
+                "ci_conclusion": "success",
+                "documentation_status": "DEPLOYED",
+            },
+            {
+                "name": "r2",
+                "org": "II",
+                "ci_conclusion": "failure",
+                "documentation_status": "SKELETON",
+            },
         ]
         report = GovernanceReport()
         for c in check_ci_health(repos):
@@ -96,9 +116,16 @@ class TestCLIEntryPoints:
         assert result == 2
 
     def test_evaluate_all_pass(self, capsys):
-        path = _write_registry([
-            {"name": "r1", "org": "I", "ci_conclusion": "success", "documentation_status": "DEPLOYED"},
-        ])
+        path = _write_registry(
+            [
+                {
+                    "name": "r1",
+                    "org": "I",
+                    "ci_conclusion": "success",
+                    "documentation_status": "DEPLOYED",
+                },
+            ]
+        )
         try:
             result = main(["evaluate", "--registry", path])
             assert result == 0
@@ -108,9 +135,16 @@ class TestCLIEntryPoints:
             os.unlink(path)
 
     def test_evaluate_with_failure(self, capsys):
-        path = _write_registry([
-            {"name": "r1", "org": "I", "ci_conclusion": "failure", "documentation_status": "DEPLOYED"},
-        ])
+        path = _write_registry(
+            [
+                {
+                    "name": "r1",
+                    "org": "I",
+                    "ci_conclusion": "failure",
+                    "documentation_status": "DEPLOYED",
+                },
+            ]
+        )
         try:
             result = main(["evaluate", "--registry", path])
             assert result == 1
@@ -120,9 +154,16 @@ class TestCLIEntryPoints:
             os.unlink(path)
 
     def test_audit_pass(self, capsys):
-        path = _write_registry([
-            {"name": "r1", "org": "I", "ci_conclusion": "success", "documentation_status": "DEPLOYED"},
-        ])
+        path = _write_registry(
+            [
+                {
+                    "name": "r1",
+                    "org": "I",
+                    "ci_conclusion": "success",
+                    "documentation_status": "DEPLOYED",
+                },
+            ]
+        )
         try:
             result = main(["audit", "--registry", path])
             assert result == 0
@@ -132,10 +173,22 @@ class TestCLIEntryPoints:
             os.unlink(path)
 
     def test_audit_organ_filter(self, capsys):
-        path = _write_registry([
-            {"name": "r1", "org": "I", "ci_conclusion": "success", "documentation_status": "DEPLOYED"},
-            {"name": "r2", "org": "II", "ci_conclusion": "failure", "documentation_status": "SKELETON"},
-        ])
+        path = _write_registry(
+            [
+                {
+                    "name": "r1",
+                    "org": "I",
+                    "ci_conclusion": "success",
+                    "documentation_status": "DEPLOYED",
+                },
+                {
+                    "name": "r2",
+                    "org": "II",
+                    "ci_conclusion": "failure",
+                    "documentation_status": "SKELETON",
+                },
+            ]
+        )
         try:
             # Audit for organ I should pass (only r1)
             result = main(["audit", "--registry", path, "--organ", "I"])
@@ -144,9 +197,16 @@ class TestCLIEntryPoints:
             os.unlink(path)
 
     def test_report_system_wide(self, capsys):
-        path = _write_registry([
-            {"name": "r1", "org": "I", "ci_conclusion": "success", "documentation_status": "DEPLOYED"},
-        ])
+        path = _write_registry(
+            [
+                {
+                    "name": "r1",
+                    "org": "I",
+                    "ci_conclusion": "success",
+                    "documentation_status": "DEPLOYED",
+                },
+            ]
+        )
         try:
             result = main(["report", "--registry", path])
             assert result == 0
@@ -156,9 +216,16 @@ class TestCLIEntryPoints:
             os.unlink(path)
 
     def test_report_organ_specific(self, capsys):
-        path = _write_registry([
-            {"name": "r1", "org": "I", "ci_conclusion": "success", "documentation_status": "DEPLOYED"},
-        ])
+        path = _write_registry(
+            [
+                {
+                    "name": "r1",
+                    "org": "I",
+                    "ci_conclusion": "success",
+                    "documentation_status": "DEPLOYED",
+                },
+            ]
+        )
         try:
             result = main(["report", "--registry", path, "--organ", "I"])
             assert result == 0
@@ -168,9 +235,16 @@ class TestCLIEntryPoints:
             os.unlink(path)
 
     def test_report_to_file(self, capsys):
-        reg_path = _write_registry([
-            {"name": "r1", "org": "I", "ci_conclusion": "success", "documentation_status": "DEPLOYED"},
-        ])
+        reg_path = _write_registry(
+            [
+                {
+                    "name": "r1",
+                    "org": "I",
+                    "ci_conclusion": "success",
+                    "documentation_status": "DEPLOYED",
+                },
+            ]
+        )
         fd, out_path = tempfile.mkstemp(suffix=".md")
         os.close(fd)
         try:

@@ -7,7 +7,9 @@ from typing import Any
 
 try:
     from organvm_engine.governance.audit import run_audit as _engine_run_audit
-    from organvm_engine.governance.rules import load_governance_rules as _engine_load_governance_rules
+    from organvm_engine.governance.rules import (
+        load_governance_rules as _engine_load_governance_rules,
+    )
 
     _HAS_ENGINE_GOVERNANCE = True
 except ImportError:
@@ -37,6 +39,7 @@ def _build_engine_registry(repos: list[dict]) -> dict[str, Any]:
 @dataclass
 class HealthCheck:
     """Result of a single health check."""
+
     name: str
     passed: bool
     message: str
@@ -46,6 +49,7 @@ class HealthCheck:
 @dataclass
 class GovernanceReport:
     """Aggregated governance health report."""
+
     checks: list[HealthCheck] = field(default_factory=list)
 
     @classmethod
@@ -129,12 +133,14 @@ def check_ci_health(repos: list[dict]) -> list[HealthCheck]:
         org = repo.get("org", "")
         ci_status = repo.get("ci_conclusion", "unknown")
         passed = ci_status == "success"
-        checks.append(HealthCheck(
-            name=f"ci-{name}",
-            passed=passed,
-            message=f"CI {'passing' if passed else 'failing'} for {name}",
-            organ=org,
-        ))
+        checks.append(
+            HealthCheck(
+                name=f"ci-{name}",
+                passed=passed,
+                message=f"CI {'passing' if passed else 'failing'} for {name}",
+                organ=org,
+            )
+        )
     return checks
 
 
@@ -181,10 +187,12 @@ def check_documentation_coverage(repos: list[dict]) -> list[HealthCheck]:
         org = repo.get("org", "")
         doc_status = repo.get("documentation_status", "EMPTY")
         passed = doc_status in ("DEPLOYED", "ACTIVE")
-        checks.append(HealthCheck(
-            name=f"docs-{name}",
-            passed=passed,
-            message=f"Docs {'deployed' if passed else doc_status.lower()} for {name}",
-            organ=org,
-        ))
+        checks.append(
+            HealthCheck(
+                name=f"docs-{name}",
+                passed=passed,
+                message=f"Docs {'deployed' if passed else doc_status.lower()} for {name}",
+                organ=org,
+            )
+        )
     return checks

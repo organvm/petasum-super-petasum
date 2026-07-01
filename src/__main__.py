@@ -5,6 +5,7 @@ Usage:
     python -m src audit --registry registry.json [--organ I]
     python -m src report --registry registry.json [--organ I]
 """
+
 from __future__ import annotations
 
 import argparse

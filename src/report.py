@@ -26,7 +26,9 @@ def generate_system_report(
     if tracker.pending:
         lines.append("### Pending Obligations")
         for ob in tracker.pending:
-            lines.append(f"- [{ob.obligation_type}] {ob.source_organ} \u2192 {ob.target_organ}: {ob.description}")
+            lines.append(
+                f"- [{ob.obligation_type}] {ob.source_organ} \u2192 {ob.target_organ}: {ob.description}"
+            )
         lines.append("")
 
     # Governance health
